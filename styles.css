@@ -1,0 +1,56 @@
+:root {
+    --first: black;
+}
+
+@media (orientation:landscape) {
+    body {
+        background-color:rgb(23, 95, 95);
+    }
+
+    .header-a {
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
+        /*This text to be very large and diagonal; my name */
+    }
+
+    .head-link {
+        font-size: 3em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .left-sec {
+        position:fixed;
+        z-index: 2;
+        background:linear-gradient(to right, rgb(23, 95, 95, 1) 60%, rgb(23, 95, 95, 0) 90%);
+        width:100%;
+        height:100%;
+        float:left;
+        /*The left, solid color section of the page; links, text, main body */
+        /*TO DO: This needs to be decoupled from the text; this needs to be fixed in place while the text scrolls. DOn't have time right now. */
+    }
+
+    .left-sec-txt {
+        width:50%;
+        margin:20px;
+    }
+
+    .right-sec {
+        position:fixed;
+        z-index: 1;
+        background-color: black;
+        width:40%;
+        height:100%;
+        right:0;
+        overflow:hidden;
+        /*The right, image section of the page. will be different pictures for each section */
+        /*TO DO: Image should never be a percentage, it stretches. Make it a static size that the rest of the page adjusts to. */
+        /*TO DO: Image must be placed properly so that the left edge always falls under the solid color; width must always be less than or equal to the first gradient point in the background style above */
+    }
+
+    .right-sec img {
+        width:100%;
+        height:100%;
+    }
+}

@@ -1,0 +1,1 @@
+This is going to be a lnading page/front-facing professional page - the actual ad for me as a developer and employee.
