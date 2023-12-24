@@ -1,0 +1,118 @@
+:root {
+    --first: black;
+}
+
+@media (orientation:landscape) {
+    body {
+        background-color:rgb(23, 95, 95);
+    }
+
+    .top-title {
+        position:relative;
+    }
+
+    .bot-title {
+        position:relative;
+    }
+
+    .header-a {
+        font-size: 5em;
+        font-family: sans-serif;
+        font-weight: 1000;
+        transform: rotate(-10deg) skew(-10deg);
+        margin: 0 0 0 -20px;
+        /*This text to be very large and diagonal; my name */
+    }
+
+    .links {
+        padding:10px 0 0 0;
+    }
+    .head-link {
+        font-size: 3em;
+        font-family: sans-serif;
+        font-weight: bold;
+        transform:rotate(-10deg) skew(-10deg);
+        margin: 0 0 0 0;
+        overflow:hidden;
+        animation-name:loadslide;
+        animation-duration:.5s;
+        transition: margin .1s;
+        border:10px solid transparent;
+    }
+
+    .head-link h2 {
+        float:left;
+    }
+
+    .head-link:hover {
+        margin: -2px 0 2px 10px;
+        border-radius:3px;
+    }
+
+    .header {
+        position:fixed;
+        margin: 20px 0 0 0;
+    }
+
+    .link-stripe {
+        position:relative;
+        float:left;
+        background-color:black;
+        width:1000px;
+        height:1em;
+        margin: 0 0 10px 5px;
+    }
+
+    .left-sec {
+        position:fixed;
+        z-index: 2;
+        background:linear-gradient(to right, rgb(23, 95, 95, 1) 60%, rgb(23, 95, 95, 0) 90%);
+        width:100%;
+        height:100%;
+        float:left;
+        /*The left, solid color section of the page; links, text, main body */
+        /*TO DO: This needs to be decoupled from the text; this needs to be fixed in place while the text scrolls. DOn't have time right now. */
+    }
+
+    .left-sec-top {
+        position:absolute;
+    }
+
+    .left-sec-txt {
+        position:relative;
+        z-index:3;
+    }
+
+    .desc-txt {
+        font-family:sans-serif;
+        position:fixed;
+        padding:20px;
+        width:50%;
+        z-index:3;
+        bottom: 0;
+    }
+
+    .right-sec {
+        position:fixed;
+        z-index: 1;
+        background-color: black;
+        width:40%;
+        height:100%;
+        right:0;
+        overflow:hidden;
+        /*The right, image section of the page. will be different pictures for each section */
+        /*TO DO: Image should never be a percentage, it stretches. Make it a static size that the rest of the page adjusts to. */
+        /*TO DO: Image must be placed properly so that the left edge always falls under the solid color; width must always be less than or equal to the first gradient point in the background style above */
+    }
+
+    .right-sec img {
+        width:100%;
+        height:100%;
+    }
+
+    /* ANIMATIONS */
+    @keyframes loadslide {
+        from {margin: 0 0 0 -400px;}
+        to {margin: 0 0 0 0}
+    }
+}
