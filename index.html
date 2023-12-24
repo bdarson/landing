@@ -3,11 +3,16 @@
         <title></title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="left-sec"></div>
+        <div class="right-sec-upper">
+            <img src="./images/home-img.jpg" alt="">
+        </div>
         <div class="right-sec">
-            <img src="./images/brandon_portrait_hirez.png" alt="">
+            <img src="./images/default.jpg" alt="">
         </div>
         <div class="left-sec-top">
             <div class="left-sec-txt">
@@ -15,13 +20,15 @@
                     <h1 class="header-a top-title">BRANDON</h1>
                     <h1 class="header-a bot-title">DARSON</h1>
                 <div class="links">
-                    <div class="head-link"><h2>HOME</h2></div> <!--All of these will be the diagonal links-->
-                    <br>
-                    <div class="head-link"><h2>ABOUT</h2></div>
-                    <br>
-                    <div class="head-link"><h2>WORK</h2></div>
-                    <br>
-                    <div class="head-link"><h2>PLAY</h2></div>
+                    <ul id="navigation">
+                        <li><div class="head-link"><a id="1" href="#" data-filename="home-img"><h2>HOME</h2></a></div></li>
+                        <br>
+                        <li><div class="head-link"><a id="2" href="#" data-filename="about-img"><h2>ABOUT</h2></a></div></li>
+                        <br>
+                        <li><div class="head-link"><a id="3" href="#" data-filename="work-img"><h2>WORK</h2></a></div></li>
+                        <br>
+                        <li><div class="head-link"><a id="4" href="../darsondesign/index.html" data-filename="play-img"><h2>PLAY</h2></a></div></li>
+                    </ul>
                 </div>
             </div>
                 <br>
