@@ -21,11 +21,17 @@
         font-weight: 1000;
         transform: rotate(-10deg) skew(-10deg);
         margin: 0 0 0 -20px;
+        top:-150;
+        padding:0 2000px 10px 0;
+        color:white;
+        background-color:black;
         /*This text to be very large and diagonal; my name */
     }
 
     .links {
+        position:relative;
         padding:10px 0 0 0;
+        top:-150;
     }
     .head-link {
         font-size: 3em;
