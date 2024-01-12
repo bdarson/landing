@@ -7,7 +7,7 @@ $('#navigation li a').hover( //triggers the code below on hover
         var linkIndex = $(this).attr("data-filename"); //sets the linkIndex variable so it knows which image to grab - data-filename is a custom attribute
         $('.right-sec-upper img')
             .fadeOut(200, function() { //makes the image switch a function of the fadeout, hiding it
-                $('.right-sec-upper img').attr('src', './images/'+linkIndex+'.jpg')
+                $('.right-sec-upper img').attr('src', './lnd-img/'+linkIndex+'.jpg')
             })
             .fadeIn(200); //fades the new image in
         },
