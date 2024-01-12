@@ -2,6 +2,18 @@
     --first: black;
 }
 
+/* GLOBALS */
+h1 {
+    font-family:sans-serif;
+    font-size:3em;
+    user-select:none;
+}
+
+p {
+    font-family: sans-serif;
+    user-select:none;
+}
+
 @media (orientation:landscape) {
     body {
         background-color:rgb(23, 95, 95);
@@ -135,5 +147,48 @@
     @keyframes loadslide {
         from {margin: 0 0 0 -400px;}
         to {margin: 0 0 0 0}
+    }
+
+    /* ABOUT PAGE SPECIFIC */
+    .header-cen {
+        z-index:2;
+        position:relative;
+        font-size:3em;
+        text-align:center;
+        font-weight:1000;
+        color:white;
+        background-color:black;
+        padding:0 0 10px 0;
+        top:300;
+    }
+
+    .back-slide {
+        position:relative;
+        top:100;
+        float:left;
+        z-index:1;
+        background-color:black;
+        width:23.4%;
+        height:200px;
+        transition:top .5s;
+        margin:0 0 0 20px;
+    }
+
+        .back-slide:hover {
+            top:-20;
+        }
+
+    .label-text {
+        color:white;
+        font-size:1em;
+        text-align:center;
+        padding:10px 0 0 0;
+        font-weight:1000;
+        user-select:none;
+    }
+
+    .slide-text {
+        color:white;
+        margin:20px;
     }
 }
