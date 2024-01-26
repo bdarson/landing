@@ -207,5 +207,14 @@ p {
     .slide-text {
         color:white;
         margin:20px;
+        line-height:1.2;
     }
+}
+
+/* EXPERIMENTAL */
+.txt-highlight {
+    background-color:white;
+    color:black;
+    margin:0;
+    padding:0;
 }
