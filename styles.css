@@ -176,12 +176,12 @@ p {
         color:white;
         background-color:black;
         padding:0 0 10px 0;
-        top:300;
+        top:200;
     }
 
     .back-slide {
         position:relative;
-        top:100;
+        top:0;
         float:left;
         z-index:1;
         background-color:black;
@@ -192,7 +192,7 @@ p {
     }
 
         .back-slide:hover {
-            top:-20;
+            top:-120;
         }
 
     .label-text {
@@ -217,4 +217,60 @@ p {
     color:black;
     margin:0;
     padding:0;
+}
+
+.menu-pop {
+    position:relative;
+    background-color:black;
+    color:white;
+    font-family: sans-serif;
+    width:500px;
+    height:75px;
+}
+
+.menu-links li {
+    display:inline-block;
+    padding:25px;
+    margin: auto;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    transition: color .2s;
+}
+
+.menu-links li a:hover {
+    color:grey;
+}
+
+.menu {
+    position:relative;
+    top:-75px;
+    transition: top .5s;
+}
+
+    .menu:hover {
+        top: 0;
+    }
+
+.menu-links {
+    position:relative;
+    padding-left:30px;
+}
+
+    .menu-links li .active {
+        color:grey;
+    }
+
+.menu-btn {
+    position: relative;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    height:15px;
+    width:15px;
+    padding:10px;
 }
