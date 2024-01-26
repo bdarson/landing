@@ -44,6 +44,8 @@ p {
         position:relative;
         padding:10px 0 0 0;
         top:-150;
+        animation-name:loadslide;
+        animation-duration:.5s;
     }
     .head-link {
         font-size: 3em;
@@ -54,8 +56,6 @@ p {
         transform:rotate(-10deg) skew(-10deg);
         margin: 0 0 0 0;
         overflow:hidden;
-        animation-name:loadslide;
-        animation-duration:.5s;
         text-decoration:none;
         transition: margin .1s;
         border:10px solid transparent;
@@ -107,10 +107,17 @@ p {
     .desc-txt {
         font-family:sans-serif;
         position:fixed;
+        font-weight:bold;
+        color:white;
+        background-color:black;
+        transform: rotate(-10deg) skew(-10deg) scale(1);
         padding:20px;
+        left:-10;
         width:50%;
         z-index:3;
-        bottom: 0;
+        bottom: 100;
+        animation-name:loadslide-2;
+        animation-duration:.5s;
     }
 
     .right-sec {
@@ -145,8 +152,18 @@ p {
 
     /* ANIMATIONS */
     @keyframes loadslide {
-        from {margin: 0 0 0 -400px;}
+        from {margin: 60px 0 0 -400px;}
         to {margin: 0 0 0 0}
+    }
+
+    @keyframes loadslide-2 {
+        from {
+            margin: 0 0 0 -1000px;
+            bottom:-75;}
+        to {
+            margin: 0 0 0 0;
+            bottom:100;
+        }
     }
 
     /* ABOUT PAGE SPECIFIC */
