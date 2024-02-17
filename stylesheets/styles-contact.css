@@ -1,0 +1,160 @@
+/* CONTACT FORM */
+textarea {
+    width:100%;
+}
+
+input {
+    width:100%;
+    float:left;
+}
+
+.list {
+    text-align: left;
+    padding-left: 3.2em;
+    padding-bottom: 1em;
+}
+
+.sub {
+    font-size: .6em;
+    padding-bottom:.7em;
+}
+
+.dl-link {
+    display:inline;
+    text-align:center;
+    text-decoration: none;
+    color:pink;
+    margin: auto;
+}
+
+.modal p {
+    font-size:.95em;
+    padding-top:1em;
+}
+
+form label {
+    float:left;
+    font-family:sans-serif;
+    clear:both;
+    margin: 5% 0 1% 0;
+}
+
+form select {
+    width: 100%;
+    float:left;
+}
+
+form .column {
+    float:left;
+    width:100%;
+    max-width:49%;
+}
+
+form .r {
+    float:right;
+}
+
+form p {
+    padding-top:1.6em;
+}
+
+.form-group {
+    margin:2% 0 0 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.btn-send {
+    margin-top:2%;
+    background-color: black;
+    color:white;
+    border:0;
+    padding:2%;
+}
+
+.btn-send:hover {
+    background-color: var(--h_active_bg);
+}
+/* END FORM */
+
+/* CONTACT MODAL */
+.modal {
+    display:none;
+    position:fixed;
+    z-index:1000;
+    padding-top:4%;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin:auto;
+    display:block;
+    text-align:center;
+}
+
+.close {
+    position:absolute;
+    top:15px;
+    right:35px;
+    color:#f1f1f1;
+    font-size:5em;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.close:hover, .close:focus {
+    color:#bbb;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.contact-body {
+    border:white 10px solid;
+    background-color:rgb(47, 98, 169);
+    color:black;
+    width:80%;
+    height:80%;
+    margin:auto;
+}
+
+.table-bg {
+    padding: 0 2% 2% 2%;
+    background-color: rgb(28, 28, 28);
+    height: fit-content;
+    margin-top: 3%;
+}
+
+/* CONTACT FORM ROWS AND COLUMNS */
+.row {
+    text-align:center;
+    margin:0 5% 0 5%;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.column {
+    float:left;
+    width:100%;
+    max-width:12em;
+}

@@ -1,3 +1,4 @@
+/* HOVER IMAGE CHANGE */
 $(document).ready(function() { //initializes the script
 $('#navigation li a').hover( //triggers the code below on hover
     function(){
@@ -19,3 +20,12 @@ $('#navigation li a').hover( //triggers the code below on hover
         $('.right-sec-upper img').fadeOut(200); //fades the old image out when mouseOff is triggered
     },
 );
+
+/* CONTACT MODAL OPEN/CLOSE */
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
