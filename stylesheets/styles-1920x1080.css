@@ -170,23 +170,23 @@ p {
         color:white;
         background-color:black;
         padding:0 0 10px 0;
-        top:200;
+        top:300;
     }
 
     .back-slide {
         position:relative;
-        top:0;
+        top:100;
         float:left;
         z-index:1;
         background-color:black;
-        width:23.4%;
+        width:455px;
         height:200px;
         transition:top .5s;
         margin:0 0 0 20px;
     }
 
         .back-slide:hover {
-            top:-120;
+            top:-50;
         }
 
     .label-text {
@@ -291,7 +291,7 @@ p {
     width:250px;
     height:50px;
     right:-300;
-    bottom:-650;
+    bottom:-645;
 }
 
 .contact-btn {
@@ -299,7 +299,7 @@ p {
     background-color:black;
     font-size:2em;
     right:-50;
-    bottom: -650;
+    bottom: -645;
     color: white;
     height:50px;
     width:50px;
@@ -312,6 +312,10 @@ p {
     font-size:2em;
     text-align:center;
     line-height:1.5em;
+}
+
+.subpg {
+    bottom:-635;
 }
 
 .index-temp-mod {
