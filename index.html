@@ -2,22 +2,52 @@
     <head>
         <title>Darson Design</title>
         <link rel="stylesheet" href="./stylesheets/reset.css">
-        <link rel="stylesheet" media="screen and (min-width: 781px)" href="./stylesheets/styles-1920x1080.css">
-        <link rel="stylesheet" media="screen and (min-width: 1921px)"  href="./stylesheets/styles-3840x2160.css">
+        <link rel="stylesheet" media="screen and (min-width: 781px) and (orientation:landscape)" href="./stylesheets/styles-1920x1080.css">
+        <link rel="stylesheet" media="screen and (orientation:portrait)" href="./stylesheets/phone/styles-1080x2400.css">
+        <link rel="stylesheet" media="screen and (min-width: 1921px) and (orientation:landscape)"  href="./stylesheets/styles-3840x2160.css">
         <link rel="stylesheet" href="./stylesheets/styles-contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="left-sec"></div>
-        <div class="right-sec-upper">
+        <div class="border ls-off"></div>
+        <!--PHONE UNIQUE-->
+        
+        <div class="header-drk"></div>
+        
+        <div class="header ls-off">
+            <h1 class="header-a top-title">BRANDON</h1>
+            <h1 class="header-a bot-title">DARSON</h1>
+        </div>
+
+        <div class="header-bb ls-off"></div>
+        
+        <div class="main-body ls-off">
+            
+        </div>
+        
+        <div class="ph-menu ls-off">
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="work.html">WORK</a></li>
+                    <li><a href="https://www.darsondesign.com/darsondesign/index.html">PLAY</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--PHONE'S OVER-->
+
+        <div class="left-sec ph-off"></div>
+        <div class="right-sec-upper ph-off">
             <img src="./lnd-img/home-img.jpg" alt="">
         </div>
-        <div class="right-sec">
+        <div class="right-sec ph-off">
             <img src="./lnd-img/default.gif" alt="">
         </div>
-        <div class="left-sec-top">
+        <div class="left-sec-top ph-off">
             <div class="left-sec-txt">
                 <div class="header">
                     <h1 class="header-a top-title">BRANDON</h1>
@@ -36,7 +66,7 @@
             </div>
                 <br>
             </div>
-            <div class="desc-txt">
+            <div class="desc-txt ph-off">
                 <p>This page is a work in progress. For a more complete page, please click on "PLAY" above.</p> <!--This should change to be a description of the currently selected section, sliding in from left like the links on load. THis section should probably also slide in from left on load, tbh-->
             </div>
         </div>
@@ -155,7 +185,7 @@
         </div>
             
         </div>
-
+    </div>
     </body>
 </html>
 

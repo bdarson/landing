@@ -2,6 +2,7 @@
     --first: black;
     --rotate: -10deg;
     --skew: -10deg;
+    --bg: rgb(23, 95, 95);
 }
 
 /* GLOBALS */
@@ -17,7 +18,7 @@ p {
 }
 
     body {
-        background-color:rgb(23, 95, 95);
+        background-color:var(--bg);
         overflow:hidden;
     }
 
@@ -39,7 +40,6 @@ p {
         padding:0 2000px 10px 10px;
         color:white;
         background-color:black;
-        /*This text to be very large and diagonal; my name */
     }
 
     .links {
@@ -320,4 +320,9 @@ p {
 
 .index-temp-mod {
     bottom:-274;
+}
+
+/* KILLERS */
+.ls-off {
+    display:none;
 }
