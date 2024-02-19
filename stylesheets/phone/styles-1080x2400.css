@@ -3,6 +3,8 @@
     --skew: -5deg;
     --bg: rgb(23, 95, 95);
     --bg-2: rgb(9, 40, 40);
+    touch-action: pan-x pan-y;
+    height: 100% 
 }
 
 /* GLOBALS */
@@ -29,9 +31,15 @@ body {
 
 .header-bb {
     position:absolute;
-    margin: 200px 0 0 0;
+    font-family:sans-serif;
+    font-size:3em;
+    text-align:center;
+    line-height:100px;
+    font-weight:1000;
+    margin: 700px 0 0 0;
     transform: rotate(var(--rotate)) skew(var(--skew));
     width:101vw;
+    height:100px;
     background-color:black;
     color:white;
     z-index:2;
@@ -75,29 +83,48 @@ body {
 /* BOTTOM MENU */
 .ph-menu {
     position:fixed;
+    font-family:sans-serif;
     bottom:0;
     width:100%;
     background-color:black;
     height:200px;
+    z-index:3;
 }
 
-li {
+.ph-row {
     display:inline-block;
-    font-family:sans-serif;
+    width:100%;
     text-align:center;
-    font-size:4em;
-    width:14%;
-    margin: 6% 5% 7% 5%;
-}
-
-li a {
-    text-decoration: none;
+    font-size:5em;
+    font-weight:1000;
     color:white;
-    font-weight:bold;
 }
 
-.active {
+.ph-column {
+    position:relative;
+    width:25%;
+    float:left;
+    margin:40px 0 0 0;
+    color:white;
+}
+
+.ph-column a {
+    color:white;
+    text-decoration:none;
+}
+
+a.active {
     color:var(--bg-2);
+}
+
+.ph-column p {
+    margin:10px 0 0 0;
+    font-size:.5em;
+}
+
+.ph-column p.active {
+    color:var(--bg-2);
+    cursor:pointer;
 }
 
 /* KILLERS */
