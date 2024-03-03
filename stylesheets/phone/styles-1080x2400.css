@@ -36,7 +36,6 @@ body {
     text-align:center;
     line-height:100px;
     font-weight:1000;
-    margin: 700px 0 0 0;
     transform: rotate(var(--rotate)) skew(var(--skew));
     width:101vw;
     height:100px;
@@ -126,6 +125,58 @@ a.active {
     color:var(--bg-2);
     cursor:pointer;
 }
+
+/* IMAGE SCROLL */
+.scroll-parent {
+    padding:700px 0 0 0;
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    transform: rotate(var(--rotate)) skew(var(--skew));
+    background-color:black;
+}
+
+.scroll-element {
+    padding-top:428px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    animation: primary 5s linear infinite;
+}
+
+.primary {
+    animation: primary 7s linear infinite;
+}
+  
+.secondary {
+    animation: secondary 7s linear infinite;
+}
+
+.scroll-element img {
+    width:19.6%;
+}
+
+/* IMAGE SCROLL ANIMATIONS */
+@keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
 
 /* KILLERS */
 .ph-off {
