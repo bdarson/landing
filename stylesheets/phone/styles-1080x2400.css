@@ -13,6 +13,10 @@ body {
     overflow:hidden;
 }
 
+.spacer {
+    height:25%;
+}
+
 .main-body {
     width:100%;
     height:100%;
@@ -26,7 +30,7 @@ body {
     width:101vw;
     background-color:black;
     color:white;
-    z-index:2;
+    z-index:1;
 }
 
 .header-bb {
@@ -59,7 +63,15 @@ body {
     font-size: 10em;
     font-family: sans-serif;
     font-weight: 1000; 
+    padding: 0 0 10px 50px;
+}
+
+.header-dyn {
+    font-size: 10em;
+    font-family: sans-serif;
+    font-weight: 1000; 
     padding: 0 0 10px 100px;
+    height:fit-content;
 }
 
 .header-drk {
@@ -73,7 +85,7 @@ body {
 
 .border {
     border: 20px black solid;
-    width:96.9vw;
+    width:97.6vw;
     height:100vh;
     position:fixed;
     z-index:2;
@@ -101,7 +113,7 @@ body {
 
 .ph-column {
     position:relative;
-    width:25%;
+    width:20%;
     float:left;
     margin:40px 0 0 0;
     color:white;
