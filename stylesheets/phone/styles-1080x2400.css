@@ -91,6 +91,39 @@ body {
     z-index:2;
 }
 
+.ph-maintext {
+    position:absolute;
+    font-family:sans-serif;
+    font-size:3em;
+    text-align:center;
+    line-height:100px;
+    font-weight:1000;
+    transform: rotate(var(--rotate)) skew(var(--skew));
+    bottom:270;
+    right:40;
+    width:101vw;
+    height:1000px;
+    background-color:black;
+    color:white;
+    z-index:2;
+}
+
+.blk-spc {
+    position:absolute;
+    font-family:sans-serif;
+    font-size:3em;
+    text-align:center;
+    line-height:100px;
+    font-weight:1000;
+    transform: rotate(var(--rotate)) skew(var(--skew));
+    bottom:125;
+    width:101vw;
+    height:100px;
+    background-color:black;
+    color:white;
+    z-index:2;
+}
+
 /* BOTTOM MENU */
 .ph-menu {
     position:fixed;
