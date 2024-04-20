@@ -17,9 +17,19 @@ body {
     height:25%;
 }
 
+.top {
+    height:40%;
+    width:100%;
+}
+
 .main-body {
     width:100%;
-    height:100%;
+    height:30%;
+}
+
+.feet {
+    width:100%;
+    height:20%;
 }
 
 .header {
@@ -102,7 +112,7 @@ body {
     bottom:270;
     right:40;
     width:101vw;
-    height:1000px;
+    height:47.25%;
     background-color:black;
     color:white;
     z-index:2;
