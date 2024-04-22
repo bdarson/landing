@@ -1,0 +1,339 @@
+:root {
+    --first: black;
+    --rotate: -10deg;
+    --skew: -10deg;
+    --bg: rgb(23, 95, 95);
+}
+
+/* GLOBALS */
+h1 {
+    font-family:sans-serif;
+    font-size:3em;
+    user-select:none;
+}
+
+p {
+    font-family: sans-serif;
+    user-select:none;
+}
+
+    body {
+        background-color:var(--bg);
+        overflow:hidden;
+    }
+
+    .top-title {
+        position:relative;
+    }
+
+    .bot-title {
+        position:relative;
+    }
+
+    .header-a {
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: 1000;
+        transform: rotate(var(--rotate)) skew(var(--skew));
+        margin: 0 0 0 -20px;
+        top:-165;
+        padding:0 2000px 10px 10px;
+        color:white;
+        background-color:black;
+    }
+
+    .links {
+        position:relative;
+        padding:10px 0 0 0;
+        top:-150;
+        animation-name:loadslide;
+        animation-duration:.5s;
+    }
+    .head-link {
+        font-size: 2.5em;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-style:none;
+        color:black;
+        transform:rotate(var(--rotate)) skew(var(--skew));
+        margin: 0 0 0 0;
+        overflow:hidden;
+        text-decoration:none;
+        transition: margin .1s;
+        border:10px solid transparent;
+    }
+
+    .head-link h2 {
+        float:left;
+        color:black;
+    }
+
+    .head-link:hover {
+        margin: -2px 0 2px 10px;
+    }
+
+    .header {
+        position:relative;
+        margin: 30px 0 0 0;
+    }
+
+    .left-sec {
+        position:fixed;
+        z-index: 3;
+        background:linear-gradient(to right, rgb(23, 95, 95, 1) 60%, rgb(23, 95, 95, 0) 90%);
+        width:100%;
+        height:100%;
+        float:left;
+        /*The left, solid color section of the page; links, text, main body */
+        /*TO DO: This needs to be decoupled from the text; this needs to be fixed in place while the text scrolls. DOn't have time right now. */
+    }
+
+    .left-sec-top {
+        position:absolute;
+    }
+
+    .left-sec-txt {
+        position:relative;
+        z-index:3;
+    }
+
+    .desc-txt {
+        font-family:sans-serif;
+        position:relative;
+        font-size:1em;
+        font-weight:bold;
+        color:white;
+        background-color:black;
+        transform: rotate(var(--rotate)) skew(var(--skew));
+        padding:20px;
+        left:-10;
+        width:35%;
+        z-index:3;
+        bottom: 0;
+        animation-name:loadslide-2;
+        animation-duration:.5s;
+    }
+
+    .right-sec {
+        position:fixed;
+        z-index: 1;
+        width:40%;
+        height:100%;
+        right:0;
+        overflow:hidden;
+        /*The right, image section of the page. will be different pictures for each section */
+        /*TO DO: Image should never be a percentage, it stretches. Make it a static size that the rest of the page adjusts to. */
+    }
+
+    .right-sec-upper {
+        position:absolute;
+        z-index:2;
+        width:45%;
+        height:fit-content;
+        right:0;
+        overflow:hidden;
+    }
+
+    .right-sec img {
+        width:100%;
+        height:100%;
+    }
+
+    .right-sec-upper img {
+        width:100%;
+        height:100%;
+    }
+
+    /* ANIMATIONS */
+    @keyframes loadslide {
+        from {margin: 60px 0 0 -400px;}
+        to {margin: 0 0 0 0}
+    }
+
+    @keyframes loadslide-2 {
+        from {
+            margin: 0 0 0 -1000px;
+            bottom:-100;}
+        to {
+            margin: 0 0 0 0;
+            bottom:0;
+        }
+    }
+
+    /* DRAWER */
+    .header-cen {
+        z-index:2;
+        position:relative;
+        font-size:3em;
+        text-align:center;
+        font-weight:1000;
+        color:white;
+        background-color:black;
+        padding:0 0 10px 0;
+        top:300;
+    }
+
+    .back-slide {
+        position:relative;
+        top:100;
+        float:left;
+        z-index:1;
+        background-color:black;
+        width:455px;
+        height:200px;
+        transition:top .5s;
+        margin:0 0 0 20px;
+    }
+
+        .back-slide:hover {
+            top:-50;
+        }
+
+        .drawer-links {
+            font-family:sans-serif;
+            font-weight:1000;
+            color: white;
+            margin:5%;
+        }
+
+        .drawer-links li {
+            margin: 0 0 5% 0;
+        }
+
+    .label-text {
+        color:white;
+        font-size:1em;
+        text-align:center;
+        padding:10px 0 0 0;
+        font-weight:1000;
+        user-select:none;
+    }
+
+    .slide-text {
+        color:white;
+        margin:20px;
+        line-height:1.2;
+    }
+
+/* EXPERIMENTAL */
+.txt-highlight {
+    background-color:white;
+    color:black;
+    margin:0;
+    padding:0;
+}
+
+.menu-pop {
+    position:relative;
+    background-color:black;
+    color:white;
+    font-family: sans-serif;
+    width:100%;
+}
+
+.menu-links li {
+    display:inline-block;
+    padding:2.5%;
+    margin: auto;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    transition: color .2s;
+}
+
+.menu-links li a:hover {
+    color:grey;
+}
+
+.menu {
+    position:relative;
+    top:-25%;
+    transition: top .5s;
+    font-size:2em;
+    max-height:5%;
+}
+
+    .menu:hover {
+        top: 0;
+    }
+
+.menu-links {
+    position:relative;
+    padding-left:2%;
+    max-width:50%;
+}
+
+    .menu-links li .active {
+        color:grey;
+    }
+
+.menu-btn {
+    position: relative;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    height:30px;
+    width:30px;
+    padding:10px;
+}
+
+/* Contact Button */
+.contact {
+    position:relative;
+    transition: right .5s;
+    float:right;
+    right:50;
+    z-index:9999;
+}
+
+    .contact:hover {
+        right:300;
+    }
+
+.contact-pop {
+    position:absolute;
+    background-color:black;
+    color:white;
+    font-family: sans-serif;
+    width:250px;
+    height:50px;
+    right:-300;
+    bottom:-645;
+}
+
+.contact-btn {
+    position: absolute;
+    background-color:black;
+    font-size:2em;
+    right:-50;
+    bottom: -645;
+    color: white;
+    height:50px;
+    width:50px;
+    text-align:center;
+    line-height:1.5em;
+}
+
+.contact-link {
+    font-weight:bold;
+    font-size:2em;
+    text-align:center;
+    line-height:1.5em;
+}
+
+.subpg {
+    bottom:-635;
+}
+
+.index-temp-mod {
+    bottom:-75;
+}
+
+/* KILLERS */
+.ls-off {
+    display:none;
+}
