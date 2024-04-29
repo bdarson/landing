@@ -170,34 +170,69 @@ p {
         color:white;
         background-color:black;
         padding:0 0 10px 0;
-        top:300;
+        top:0;
     }
 
     .back-slide {
         position:relative;
-        top:100;
+        top:20;
         float:left;
         z-index:1;
         background-color:black;
         width:455px;
         height:200px;
-        transition:top .5s;
+        transition:scale .5s, top .5s;
         margin:0 0 0 20px;
     }
 
         .back-slide:hover {
-            top:-50;
+            scale:1.05;
+            top:15;
         }
 
-        .drawer-links {
-            font-family:sans-serif;
-            font-weight:1000;
-            color: white;
-            margin:5%;
+    .drawer-links {
+        font-family:sans-serif;
+        color:white;
+        font-weight:1000;
+        margin:5%;
+    }
+
+        .drawer-links a {
+            text-decoration:none;
+            color:white;
+        }
+
+        .drawer-links a:visited {
+            color:var(--bg);
         }
 
         .drawer-links li {
             margin: 0 0 5% 0;
+        }
+
+    .display {
+        position:relative;
+        float:left;
+        width:98%;
+        height:200px;
+        background-color:black;
+        color:white;
+        margin: 1%;
+    }
+        .display-label {
+            text-align:left;
+            font-size:2em;
+            color:white;
+            padding:20px;
+            font-weight:1000;
+            user-select:none;
+        }
+
+        .display-text {
+            color:white;
+            margin:20px;
+            line-height:1.2;
+            width:50%;
         }
 
     .label-text {

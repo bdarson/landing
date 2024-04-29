@@ -30,7 +30,7 @@ p {
     }
 
     .header-a {
-        font-size: 15em;
+        font-size: 12em;
         font-family: sans-serif;
         font-weight: 1000;
         transform: rotate(var(--rotate)) skew(var(--skew));
@@ -51,7 +51,7 @@ p {
         animation-duration:.5s;
     }
     .head-link {
-        font-size: 13em;
+        font-size: 10em;
         font-family: sans-serif;
         font-weight: bold;
         font-style:none;
@@ -109,7 +109,7 @@ p {
         transform: rotate(var(--rotate)) skew(var(--skew)) scale(1);
         padding:50px;
         left:-10;
-        width:75%;
+        width:55%;
         z-index:3;
         bottom: -250;
         animation-name:loadslide-2;
@@ -172,23 +172,43 @@ p {
         color:white;
         background-color:black;
         padding:0 0 10px 0;
-        top:200;
+        top:0;
     }
 
     .back-slide {
         position:relative;
-        top:0;
+        top:20;
         float:left;
         z-index:1;
         background-color:black;
-        width:23.4%;
+        width:455px;
         height:200px;
-        transition:top .5s;
+        transition:scale .5s, top .5s;
         margin:0 0 0 20px;
     }
 
         .back-slide:hover {
-            top:-120;
+            scale:1.05;
+            top:15;
+        }
+
+        .drawer-links {
+            font-family:sans-serif;
+            font-weight:1000;
+            margin:5%;
+        }
+
+        .drawer-links a {
+            text-decoration:none;
+            color:white;
+        }
+
+        .drawer-links a:visited {
+            color:var(--bg);
+        }
+
+        .drawer-links li {
+            margin: 0 0 5% 0;
         }
 
     .label-text {
@@ -241,7 +261,7 @@ p {
 
 .menu {
     position:relative;
-    top:-25%;
+    top:-35%;
     transition: top .5s;
     font-size:2em;
     max-height:5%;
