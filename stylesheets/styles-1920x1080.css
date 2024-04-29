@@ -212,13 +212,22 @@ p {
 
     .display {
         position:relative;
+        top:0;
         float:left;
         width:98%;
         height:200px;
         background-color:black;
         color:white;
         margin: 1%;
+        transition:scale .5s, top .5s;
+        overflow:hidden;
     }
+
+        .display:hover {
+            scale:1.01;
+            top:-7.5;
+        }
+
         .display-label {
             text-align:left;
             font-size:2em;
@@ -230,9 +239,20 @@ p {
 
         .display-text {
             color:white;
-            margin:20px;
+            margin:0 20px 20px 20px;
             line-height:1.2;
             width:50%;
+        }
+
+        .img-side {
+            position:relative;
+            top:-50;
+            float:right;
+            width:20%;
+            padding:1em 5em 1em 1em;
+            filter:invert(1);
+            opacity:25%;
+            object-fit:cover;
         }
 
     .label-text {
