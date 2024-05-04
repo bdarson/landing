@@ -11,32 +11,27 @@
 body {
     background-color:var(--bg);
     overflow-x:hidden;
-    overflow-y:hidden;
 }
 
 .spacer {
-    display:none;
+    position:relative;
+    height:25%;
+    width:100%;
 }
 
 .top {
-    height:35%;
+    height:40%;
     width:100%;
 }
 
 .main-body {
     width:100%;
-    height:45%;
-    margin-bottom:5%;
+    height:90%;
 }
-/* Main thing that needs to adjust with this layout at different device heights - leaves a HUGE gap at the bottom of the page. Currently trying to keep a consistent height percentage and play with the bottom padding in order to keep the code consistent.
-
-Wait. It's going to keep changing as I change the text in there. I need to finalize the mobile home page before anything else.
-
-WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exists within the hierarchy of the page, and have the rest of the elements margin off of that. Delightfully devilish, Seymour!*/
 
 .feet {
     width:100%;
-    height:10%;
+    height:20%;
 }
 
 .header {
@@ -106,7 +101,6 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
     height:100vh;
     position:fixed;
     z-index:2;
-    pointer-events:none;
 }
 
 .ph-maintext {
@@ -128,33 +122,21 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
     padding: 2% 2% 2% 10%;
 }
 
-.ph-headlink {
-    position:relative;
+.blk-spc {
+    position:fixed;
     font-family:sans-serif;
-    font-size:3.5em;
+    font-size:3em;
+    text-align:center;
+    line-height:100px;
     font-weight:1000;
-    line-height:3em;
     transform: rotate(var(--rotate)) skew(var(--skew));
-    top:150;
-    right:40;
-    width:86vw;
-    padding: 1% 0 1% 10%;
-    margin: 0 0 5% 0;
-    height:fit-content;
+    bottom:145;
+    width:101vw;
+    height:7.5%;
     background-color:black;
     color:white;
-    z-index:1;
+    z-index:2;
 }
-
-    .ph-headlink a {
-        text-decoration:none;
-        color:white;
-    }
-
-    .ph-headlink a {
-        text-decoration:none;
-        color:white;
-    }
 
 /* BOTTOM MENU */
 .ph-menu {
@@ -165,46 +147,6 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
     background-color:black;
     height:11.5%;
     z-index:3;
-}
-
-    .ph-menu-hm {
-        position:absolute;
-        font-family:sans-serif;
-        bottom:-30;
-        width:100%;
-        background-color:black;
-        height:10%;
-        z-index:3;
-    }
-
-.blk-spc {
-    position:fixed;
-    transform: rotate(var(--rotate)) skew(var(--skew));
-    bottom:145;
-    width:101vw;
-    height:7.5%;
-    background-color:black;
-    color:white;
-    z-index:2;
-}
-
-    .blk-spc-hm {
-        position:absolute;
-        transform: rotate(var(--rotate)) skew(var(--skew));
-        width:101vw;
-        height:7.5%;
-        background-color:black;
-        color:white;
-        z-index:2;
-        bottom:100;
-    }
-
-.bouncer {
-    position:relative;
-    transform: rotate(var(--rotate)) skew(var(--skew));
-    width:101vw;
-    height:7.5%;
-    background-color:black;
 }
 
 .ph-row {
