@@ -8,6 +8,10 @@
 }
 
 /* GLOBALS */
+a {
+    text-decoration:none;
+}
+
 body {
     background-color:var(--bg);
     overflow-x:hidden;
@@ -43,7 +47,6 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
     position:absolute;
     margin: 100px 0 0 -2px;
     margin-right:auto;
-    transform: rotate(var(--rotate)) skew(var(--skew));
     width:101vw;
     background-color:black;
     color:white;
@@ -57,9 +60,8 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
     text-align:center;
     line-height:100px;
     font-weight:1000;
-    transform: rotate(var(--rotate)) skew(var(--skew));
     width:101vw;
-    height:100px;
+    height:50px;
     background-color:black;
     color:white;
     z-index:2;
@@ -68,7 +70,6 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
 .header-assist {
     position:absolute;
     margin: 100px 0 0 0;
-    transform: rotate(var(--rotate)) skew(var(--skew));
     width:100vw;
     background-color:black;
     color:white;
@@ -77,20 +78,15 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
 }
 
 .header-a {
-    font-size: 10em;
+    font-size: 8em;
     font-family: sans-serif;
     font-weight: 1000; 
     padding: 0 0 10px 50px;
 }
 
-.header-dyn {
-    font-size: 10em;
-    font-family: sans-serif;
-    font-weight: 1000; 
-    padding: 0 0 10px 100px;
-    height:fit-content;
+.header-text {
+    padding-top:2.5%;
 }
-
 .header-drk {
     background-color:var(--bg-2);
     height:200px;
@@ -114,7 +110,6 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
     font-family:sans-serif;
     font-size:3em;
     line-height:75px;
-    transform: rotate(var(--rotate)) skew(var(--skew));
     top:850;
     right:40;
     width:101vw;
@@ -131,10 +126,9 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
 .ph-headlink {
     position:relative;
     font-family:sans-serif;
-    font-size:3.5em;
+    font-size:3em;
     font-weight:1000;
     line-height:3em;
-    transform: rotate(var(--rotate)) skew(var(--skew));
     top:150;
     right:40;
     width:86vw;
@@ -156,6 +150,33 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
         color:white;
     }
 
+.new-content {
+    position:relative;
+    height: 25%;
+    width: 100vw;
+    background-color:black;
+    color:white;
+    bottom: -100;
+}
+
+    .nc-header {
+        height:40%;
+        width:100%;
+    }
+
+        .nc-header h1 {
+            font-size:3em;
+            font-family:sans-serif;
+            font-weight:1000;
+            padding:5%;
+        }
+
+        .nc-header p {
+            font-size:2em;
+            font-family:sans-serif;
+            padding: 0 5% 0 5%;
+        }
+
 /* BOTTOM MENU */
 .ph-menu {
     position:fixed;
@@ -168,25 +189,14 @@ WAIT WAIT. I can make a fake element that perfectly overlaps the footer, but exi
 }
 
     .ph-menu-hm {
-        position:absolute;
+        position:fixed;
         font-family:sans-serif;
         bottom:-30;
         width:100%;
         background-color:black;
-        height:10%;
+        height:5%;
         z-index:3;
     }
-
-.blk-spc {
-    position:fixed;
-    transform: rotate(var(--rotate)) skew(var(--skew));
-    bottom:145;
-    width:101vw;
-    height:7.5%;
-    background-color:black;
-    color:white;
-    z-index:2;
-}
 
     .blk-spc-hm {
         position:absolute;
@@ -249,7 +259,6 @@ a.active {
     position: relative;
     width: 100vw;
     overflow-x: hidden;
-    transform: rotate(var(--rotate)) skew(var(--skew));
     background-color:black;
 }
 
@@ -273,6 +282,7 @@ a.active {
 
 .scroll-element img {
     width:19.6%;
+    max-height:15em;
 }
 
 /* IMAGE SCROLL ANIMATIONS */
@@ -299,4 +309,6 @@ a.active {
 .ph-off {
     display:none;
 }
+
+/* TESTING */
 

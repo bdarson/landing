@@ -220,7 +220,7 @@ p {
         height:200px;
         background-color:black;
         color:white;
-        margin: 1%;
+        margin: 1% 1% 0 1%;
         transition:scale .5s, top .5s;
         overflow:hidden;
     }
@@ -255,6 +255,10 @@ p {
             filter:invert(1);
             opacity:25%;
             object-fit:cover;
+        }
+
+        .up-bump {
+            top:-150;
         }
 
     .label-text {
